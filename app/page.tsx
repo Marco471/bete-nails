@@ -54,7 +54,6 @@ export default function Home() {
             className="animate-slide-in-right mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row"
             style={{ animationDelay: "0.6s" }}
           >
-            {/* Conheça nossos trabalhos */}
             <a
               href="#servicos"
               className="flex h-12 min-w-56 items-center justify-center rounded-full border border-[#7a3e52] px-8 text-sm font-medium text-[#7a3e52] transition-all duration-300 hover:-translate-y-1 hover:bg-[#7a3e52] hover:text-white hover:shadow-lg"
@@ -62,7 +61,6 @@ export default function Home() {
               Conheça nossos trabalhos
             </a>
 
-            {/* Agendar horário */}
             <a
               href={whatsapp}
               target="_blank"
@@ -104,7 +102,7 @@ export default function Home() {
 
       <section id="servicos" className="bg-[#f8f1f3] px-6 py-24">
         <div className="mx-auto max-w-6xl">
-          {/* Título da seção */}
+          {/* Título */}
           <div className="mb-14 text-center">
             <p className="mb-3 text-sm uppercase tracking-[0.3em] text-[#7a3e52]">
               Serviços
@@ -121,8 +119,7 @@ export default function Home() {
                 MANICURE
             ================================================= */}
 
-            <article className="overflow-hidden rounded-3xl bg-white shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
-              {/* FOTO QUADRADA */}
+            <article className="overflow-hidden rounded-none bg-white shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
               <div className="relative h-80 overflow-hidden">
                 <Image
                   src="/fotos/unha1.jpg"
@@ -136,7 +133,9 @@ export default function Home() {
               <div className="p-7">
                 <span className="text-sm text-[#7a3e52]">01</span>
 
-                <h3 className="mt-2 text-2xl font-medium">Manicure</h3>
+                <h3 className="mt-2 text-2xl font-medium">
+                  Manicure
+                </h3>
 
                 <p className="mt-4 text-sm leading-7 text-[#75656b]">
                   Cuidado completo para unhas bonitas, delicadas e bem
@@ -158,8 +157,7 @@ export default function Home() {
                 ALONGAMENTO
             ================================================= */}
 
-            <article className="overflow-hidden rounded-3xl bg-white shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
-              {/* FOTO QUADRADA */}
+            <article className="overflow-hidden rounded-none bg-white shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
               <div className="relative h-80 overflow-hidden">
                 <Image
                   src="/fotos/unha2.jpg"
@@ -173,7 +171,9 @@ export default function Home() {
               <div className="p-7">
                 <span className="text-sm text-[#7a3e52]">02</span>
 
-                <h3 className="mt-2 text-2xl font-medium">Alongamento</h3>
+                <h3 className="mt-2 text-2xl font-medium">
+                  Alongamento
+                </h3>
 
                 <p className="mt-4 text-sm leading-7 text-[#75656b]">
                   Alongamento com acabamento elegante, delicado e natural.
@@ -194,8 +194,7 @@ export default function Home() {
                 NAIL ART
             ================================================= */}
 
-            <article className="overflow-hidden rounded-3xl bg-white shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
-              {/* FOTO QUADRADA */}
+            <article className="overflow-hidden rounded-none bg-white shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
               <div className="relative h-80 overflow-hidden">
                 <Image
                   src="/fotos/unha3.jpg"
@@ -209,7 +208,9 @@ export default function Home() {
               <div className="p-7">
                 <span className="text-sm text-[#7a3e52]">03</span>
 
-                <h3 className="mt-2 text-2xl font-medium">Nail Art</h3>
+                <h3 className="mt-2 text-2xl font-medium">
+                  Nail Art
+                </h3>
 
                 <p className="mt-4 text-sm leading-7 text-[#75656b]">
                   Detalhes personalizados para deixar suas unhas únicas.
@@ -234,7 +235,6 @@ export default function Home() {
       ===================================================== */}
 
       <section className="relative overflow-hidden bg-[#3d3035] px-6 py-28 text-center text-white">
-        {/* Efeitos decorativos */}
         <div className="absolute -left-32 -top-32 h-80 w-80 rounded-full bg-[#7a3e52]/30 blur-3xl" />
 
         <div className="absolute -bottom-32 -right-32 h-80 w-80 rounded-full bg-[#7a3e52]/30 blur-3xl" />
@@ -261,12 +261,16 @@ export default function Home() {
               Horário de atendimento
             </p>
 
-            <p className="mt-3 text-xl">Terça-feira a sexta-feira</p>
+            <p className="mt-3 text-xl">
+              Terça-feira a sexta-feira
+            </p>
 
-            <p className="mt-1 text-xl">Das 10h às 17h</p>
+            <p className="mt-1 text-xl">
+              Das 10h às 17h
+            </p>
           </div>
 
-          {/* Botão WhatsApp */}
+          {/* WhatsApp */}
           <a
             href={whatsapp}
             target="_blank"
@@ -283,15 +287,18 @@ export default function Home() {
       ===================================================== */}
 
       <footer className="bg-[#2c2226] px-6 py-8 text-center text-white">
-        <p className="tracking-[0.25em]">BETE NAILS</p>
+        <p className="tracking-[0.25em]">
+          BETE NAILS
+        </p>
 
-        <p className="mt-2 text-xs text-[#cbbdc1]">Nail Designer</p>
+        <p className="mt-2 text-xs text-[#cbbdc1]">
+          Nail Designer
+        </p>
 
         <p className="mt-4 text-xs text-[#a99ba0]">
           Terça a sexta • 10h às 17h
         </p>
 
-        {/* Assinatura extremamente discreta */}
         <p className="mt-5 text-[9px] text-white/30">
           Desenvolvido por{" "}
           <a
