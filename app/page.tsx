@@ -12,15 +12,15 @@ export default function Home() {
 
       <section className="relative flex min-h-screen items-center justify-center overflow-hidden bg-linear-to-br from-[#fffafa] via-[#f7e6eb] to-[#e5cbd3] px-6">
 
-        {/* Efeitos de fundo */}
+        {/* Efeitos decorativos */}
         <div className="absolute -right-32 -top-32 h-96 w-96 rounded-full bg-white/50 blur-3xl" />
 
         <div className="absolute -bottom-32 -left-32 h-96 w-96 rounded-full bg-[#7a3e52]/10 blur-3xl" />
 
-        {/* Conteúdo */}
+        {/* Conteúdo do Hero */}
         <div className="relative z-10 mx-auto max-w-4xl text-center">
 
-          {/* Nome */}
+          {/* Marca */}
           <p className="animate-slide-in-right mb-5 text-sm tracking-[0.35em] text-[#7a3e52]">
             BETE NAILS BEAUTY
           </p>
@@ -33,7 +33,7 @@ export default function Home() {
             Nail Designer
           </p>
 
-          {/* Título */}
+          {/* Título principal */}
           <h1
             className="animate-slide-in-right text-5xl font-light leading-tight md:text-7xl"
             style={{ animationDelay: "0.3s" }}
@@ -60,7 +60,7 @@ export default function Home() {
             style={{ animationDelay: "0.6s" }}
           >
 
-            {/* Botão trabalhos */}
+            {/* Conheça nossos trabalhos */}
             <a
               href="#servicos"
               className="flex h-12 min-w-56 items-center justify-center rounded-full border border-[#7a3e52] px-8 text-sm font-medium text-[#7a3e52] transition-all duration-300 hover:-translate-y-1 hover:bg-[#7a3e52] hover:text-white hover:shadow-lg"
@@ -68,7 +68,7 @@ export default function Home() {
               Conheça nossos trabalhos
             </a>
 
-            {/* Botão WhatsApp */}
+            {/* Agendar horário */}
             <a
               href={whatsapp}
               target="_blank"
@@ -123,7 +123,7 @@ export default function Home() {
 
         <div className="mx-auto max-w-6xl">
 
-          {/* Título */}
+          {/* Título da seção */}
           <div className="mb-14 text-center">
 
             <p className="mb-3 text-sm uppercase tracking-[0.3em] text-[#7a3e52]">
@@ -142,7 +142,7 @@ export default function Home() {
 
 
             {/* =================================================
-                SERVIÇO 1
+                MANICURE
             ================================================= */}
 
             <article className="overflow-hidden rounded-3xl bg-white shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
@@ -188,7 +188,7 @@ export default function Home() {
 
 
             {/* =================================================
-                SERVIÇO 2
+                ALONGAMENTO
             ================================================= */}
 
             <article className="overflow-hidden rounded-3xl bg-white shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
@@ -233,7 +233,7 @@ export default function Home() {
 
 
             {/* =================================================
-                SERVIÇO 3
+                NAIL ART
             ================================================= */}
 
             <article className="overflow-hidden rounded-3xl bg-white shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
@@ -287,7 +287,7 @@ export default function Home() {
 
       <section className="relative overflow-hidden bg-[#3d3035] px-6 py-28 text-center text-white">
 
-        {/* Brilhos */}
+        {/* Efeitos decorativos */}
         <div className="absolute -left-32 -top-32 h-80 w-80 rounded-full bg-[#7a3e52]/30 blur-3xl" />
 
         <div className="absolute -bottom-32 -right-32 h-80 w-80 rounded-full bg-[#7a3e52]/30 blur-3xl" />
@@ -330,12 +330,12 @@ export default function Home() {
           </div>
 
 
-          {/* Botão */}
+          {/* Botão WhatsApp */}
           <a
             href={whatsapp}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex h-12 min-w-56 mx-auto w-fit items-center justify-center rounded-full bg-[#b47b91] px-8 text-sm font-medium text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-[#9d6279] hover:shadow-xl"
+            className="mx-auto flex h-12 w-fit min-w-56 items-center justify-center rounded-full bg-[#b47b91] px-8 text-sm font-medium text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-[#9d6279] hover:shadow-xl"
           >
             Agendar pelo WhatsApp ↗
           </a>
@@ -362,9 +362,21 @@ export default function Home() {
           Terça a sexta • 10h às 17h
         </p>
 
+        {/* Assinatura extremamente discreta */}
+        <p className="mt-5 text-[9px] text-white/30">
+          Desenvolvido por{" "}
+          <a
+            href="https://studio.neolock.com.br"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition hover:text-white/60"
+          >
+            Studio NeoLock
+          </a>
+        </p>
+
       </footer>
 
     </main>
   );
 }
-
