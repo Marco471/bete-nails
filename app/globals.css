@@ -1,26 +1,89 @@
 @import "tailwindcss";
 
+/* =========================================================
+   CONFIGURAÇÃO GERAL
+   ========================================================= */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f8f1f3;
+  --foreground: #3d3035;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
+  margin: 0;
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* =========================================================
+   ANIMAÇÃO
+   Entrada da direita para a esquerda
+   ========================================================= */
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(80px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.9s ease-out both;
+}
+
+/* =========================================================
+   ANIMAÇÃO MAIS SUAVE
+   ========================================================= */
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.8s ease-out both;
+}
+
+/* =========================================================
+   SELEÇÃO DE TEXTO
+   ========================================================= */
+
+::selection {
+  background: #7a3e52;
+  color: #ffffff;
+}
+
+/* =========================================================
+   ACESSIBILIDADE
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
