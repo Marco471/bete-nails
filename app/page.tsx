@@ -12,7 +12,7 @@ export default function Home() {
         <div className="absolute -bottom-32 -left-32 h-96 w-96 rounded-full bg-[#c99eaa]/30 blur-3xl" />
 
         <div className="relative z-10 mx-auto max-w-4xl text-center">
-          <p className="mb-5 text-sm tracking-[0.35em] text-[#8d6572]">
+          <p className="mb-5 text-sm tracking-[0.35em] text-[#7A3E52]">
             BETE NAILS BEAUTY
           </p>
 
@@ -23,7 +23,9 @@ export default function Home() {
           <h1 className="text-5xl font-light leading-tight md:text-7xl">
             Beleza em
             <br />
-            <span className="font-medium italic">cada detalhe.</span>
+            <span className="font-medium italic text-[#7A3E52]">
+              cada detalhe.
+            </span>
           </h1>
 
           <p className="mx-auto mt-7 max-w-xl text-base leading-7 text-[#6f5a61] md:text-lg">
@@ -31,11 +33,11 @@ export default function Home() {
             momento de beleza.
           </p>
 
-          {/* BOTÕES */}
+          {/* BOTÕES DO HERO */}
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <a
               href="#servicos"
-              className="rounded-full border border-[#B89562] bg-white/60 px-8 py-3.5 text-sm font-medium text-[#6B4A3A] backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:bg-[#B89562] hover:text-white hover:shadow-lg"
+              className="inline-flex h-12 min-w-56 items-center justify-center rounded-full border border-[#7A3E52] bg-white/60 px-8 text-sm font-medium text-[#7A3E52] backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:bg-[#7A3E52] hover:text-white hover:shadow-lg"
             >
               Conheça nossos trabalhos
             </a>
@@ -44,7 +46,7 @@ export default function Home() {
               href={whatsapp}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full bg-[#B89562] px-9 py-3.5 text-sm font-medium text-white shadow-lg shadow-[#B89562]/25 transition duration-300 hover:-translate-y-1 hover:bg-[#9F7D4D] hover:shadow-xl"
+              className="inline-flex h-12 min-w-56 items-center justify-center rounded-full bg-[#7A3E52] px-8 text-sm font-medium text-white shadow-lg shadow-[#7A3E52]/25 transition duration-300 hover:-translate-y-1 hover:bg-[#5F2D3E] hover:shadow-xl"
             >
               Agendar horário
             </a>
@@ -55,14 +57,14 @@ export default function Home() {
       {/* SOBRE */}
       <section className="bg-white px-6 py-24">
         <div className="mx-auto max-w-3xl text-center">
-          <p className="mb-4 text-sm uppercase tracking-[0.3em] text-[#a47785]">
+          <p className="mb-4 text-sm uppercase tracking-[0.3em] text-[#7A3E52]">
             Bete Nails
           </p>
 
           <h2 className="text-4xl font-light md:text-5xl">
             Unhas que combinam
             <br />
-            <span className="italic">com você.</span>
+            <span className="italic text-[#7A3E52]">com você.</span>
           </h2>
 
           <p className="mx-auto mt-7 max-w-2xl leading-8 text-[#74636a]">
@@ -76,7 +78,7 @@ export default function Home() {
       <section id="servicos" className="bg-[#f8f1f3] px-6 py-24">
         <div className="mx-auto max-w-6xl">
           <div className="mb-14 text-center">
-            <p className="mb-3 text-sm uppercase tracking-[0.3em] text-[#a47785]">
+            <p className="mb-3 text-sm uppercase tracking-[0.3em] text-[#7A3E52]">
               Serviços
             </p>
 
@@ -87,7 +89,7 @@ export default function Home() {
 
           <div className="grid gap-8 md:grid-cols-3">
             {/* SERVIÇO 1 */}
-            <article className="overflow-hidden rounded-3xl bg-white shadow-md transition hover:-translate-y-2 hover:shadow-xl">
+            <article className="overflow-hidden rounded-3xl bg-white shadow-md transition duration-300 hover:-translate-y-2 hover:shadow-xl">
               <div className="h-80 overflow-hidden">
                 <Image
                   src="/fotos/unha1.jpg"
@@ -99,7 +101,7 @@ export default function Home() {
               </div>
 
               <div className="p-7">
-                <span className="text-sm text-[#b18a96]">01</span>
+                <span className="text-sm text-[#9a6b7b]">01</span>
 
                 <h3 className="mt-2 text-2xl font-medium">Manicure</h3>
 
@@ -112,7 +114,7 @@ export default function Home() {
                   href={whatsapp}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-6 inline-block text-sm font-medium text-[#8d6572] transition hover:text-[#B89562]"
+                  className="mt-6 inline-block text-sm font-medium text-[#7A3E52] transition hover:text-[#5F2D3E]"
                 >
                   Saiba mais ↗
                 </a>
@@ -120,7 +122,7 @@ export default function Home() {
             </article>
 
             {/* SERVIÇO 2 */}
-            <article className="overflow-hidden rounded-3xl bg-white shadow-md transition hover:-translate-y-2 hover:shadow-xl">
+            <article className="overflow-hidden rounded-3xl bg-white shadow-md transition duration-300 hover:-translate-y-2 hover:shadow-xl">
               <div className="h-80 overflow-hidden">
                 <Image
                   src="/fotos/unha2.jpg"
@@ -132,7 +134,7 @@ export default function Home() {
               </div>
 
               <div className="p-7">
-                <span className="text-sm text-[#b18a96]">02</span>
+                <span className="text-sm text-[#9a6b7b]">02</span>
 
                 <h3 className="mt-2 text-2xl font-medium">Alongamento</h3>
 
@@ -144,7 +146,7 @@ export default function Home() {
                   href={whatsapp}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-6 inline-block text-sm font-medium text-[#8d6572] transition hover:text-[#B89562]"
+                  className="mt-6 inline-block text-sm font-medium text-[#7A3E52] transition hover:text-[#5F2D3E]"
                 >
                   Saiba mais ↗
                 </a>
@@ -152,7 +154,7 @@ export default function Home() {
             </article>
 
             {/* SERVIÇO 3 */}
-            <article className="overflow-hidden rounded-3xl bg-white shadow-md transition hover:-translate-y-2 hover:shadow-xl">
+            <article className="overflow-hidden rounded-3xl bg-white shadow-md transition duration-300 hover:-translate-y-2 hover:shadow-xl">
               <div className="h-80 overflow-hidden">
                 <Image
                   src="/fotos/unha3.jpg"
@@ -164,7 +166,7 @@ export default function Home() {
               </div>
 
               <div className="p-7">
-                <span className="text-sm text-[#b18a96]">03</span>
+                <span className="text-sm text-[#9a6b7b]">03</span>
 
                 <h3 className="mt-2 text-2xl font-medium">Nail Art</h3>
 
@@ -176,7 +178,7 @@ export default function Home() {
                   href={whatsapp}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-6 inline-block text-sm font-medium text-[#8d6572] transition hover:text-[#B89562]"
+                  className="mt-6 inline-block text-sm font-medium text-[#7A3E52] transition hover:text-[#5F2D3E]"
                 >
                   Saiba mais ↗
                 </a>
@@ -200,7 +202,7 @@ export default function Home() {
           <h2 className="text-4xl font-light md:text-5xl">
             Seu próximo momento de
             <br />
-            <span className="italic">beleza.</span>
+            <span className="italic text-[#d9b8c1]">beleza.</span>
           </h2>
 
           <p className="mx-auto mt-6 max-w-lg leading-7 text-[#dbcdd1]">
@@ -218,13 +220,14 @@ export default function Home() {
             <p className="mt-1 text-xl">Das 10h às 17h</p>
           </div>
 
+          {/* BOTÃO FINAL - MESMO TAMANHO DO HERO */}
           <a
             href={whatsapp}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block rounded-full bg-[#B89562] px-9 py-4 text-sm font-medium text-white shadow-lg shadow-[#B89562]/25 transition duration-300 hover:-translate-y-1 hover:bg-[#9F7D4D] hover:shadow-xl"
+            className="inline-flex h-12 min-w-56 items-center justify-center rounded-full bg-[#7A3E52] px-8 text-sm font-medium text-white shadow-lg shadow-[#7A3E52]/25 transition duration-300 hover:-translate-y-1 hover:bg-[#5F2D3E] hover:shadow-xl"
           >
-            Agendar pelo WhatsApp ↗
+            Agendar pelo WhatsApp
           </a>
         </div>
       </section>
